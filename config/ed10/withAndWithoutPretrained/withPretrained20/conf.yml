@@ -1,0 +1,43 @@
+bias_val:
+- -1
+- 0
+- 1
+bias_z: 4
+channel:
+- 0
+- 1
+- 2
+checkpoint_hist: 1
+data_path:
+- /ed10/ed10.csv
+data_size: 0
+dataset: realPsf
+epochs: 300
+folder_name: ed10_withPretrained20
+image_size: 128
+infer: false
+lr: 0.0005
+npts: 745
+num_zernike: 10
+output: ''
+resume_path: /models/sd10/model_best.pth.tar
+save_every: 50
+seed: 0
+test_size: 0.1
+threads: 8
+train_batch: 64
+train_size: 0.2
+val_size: 0.1
+valid_batch: 64
+z_range: 1
+zernike:
+- 3
+- 5
+- 6
+- 7
+- 8
+- 9
+- 11
+- 12
+- 13
+- 24

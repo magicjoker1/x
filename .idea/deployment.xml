@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="root@hz-4.matpool.com:26316 password (2)" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="root@hz-4.matpool.com:26316 password">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_541" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="root@hz-4.matpool.com:26316 password (2)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/tmp/pycharm_project_410" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

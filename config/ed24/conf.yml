@@ -1,0 +1,90 @@
+# ED24 数据集像差预测推理配置文件
+# 缩进规则：非列表参数前2个空格，列表子项前4个空格+'-'
+
+# 像差偏置相关参数（列表类型）
+bias_val:
+  - -1
+  - 0
+  - 1
+# Z轴偏置（非列表参数）
+bias_z: 4
+
+# 输入图像通道（列表类型，0/1/2对应RGB三通道）
+channel:
+  - 0
+  - 1
+  - 2
+
+# 保存 checkpoint 的历史记录数（非列表参数）
+checkpoint_hist: 1
+
+# 数据集路径（关键：非列表参数，前2个空格，Windows绝对路径）
+data_path: C:/Users/jake/Desktop/summerzernike/zernike-prediction-main1/ed24/ed24.csv
+# 数据量控制（0表示使用全部数据，非列表参数）
+data_size: 0
+# 数据集类型（真实PSF数据，非列表参数）
+dataset: realPsf
+# 推理轮次（仅推理时设为1，非列表参数）
+epochs: 50
+# 输出文件夹子名称（与ED24数据集对应，非列表参数）
+folder_name: ed24
+# 输入图像尺寸（128x128，非列表参数）
+image_size: 128
+# 运行模式（true=推理模式，false=训练模式，非列表参数）
+infer: true
+# 学习率（仅训练有效，推理时可保留默认，非列表参数）
+lr: 0.0005
+# 采样点数（光学相关参数，非列表参数）
+npts: 745
+# 预测的Zernike系数数量（24个，与模型输出匹配，非列表参数）
+num_zernike: 24
+# 输出根目录（空表示默认./output，非列表参数）
+output: ''
+
+# 预训练模型权重路径（关键：非列表参数，前2个空格，Windows绝对路径）
+resume_path: C:/Users/jake/Desktop/summerzernike/zernike-prediction-main1/models/ed24/model_best.pth.tar
+# 训练时每多少轮保存一次checkpoint（仅训练有效，非列表参数）
+save_every: 50
+# 随机种子（确保结果可复现，非列表参数）
+seed: 0
+# 测试集比例（1%数据用于测试，非列表参数）
+test_size: 0.2
+# 数据加载线程数（非列表参数）
+threads: 8
+# 训练批次大小（仅训练有效，非列表参数）
+train_batch: 64
+# 训练集比例（1.0表示全部数据用于训练，仅训练有效，非列表参数）
+train_size: 1.0
+# 验证集比例（1%数据用于验证，仅训练有效，非列表参数）
+val_size: 0.2
+# 验证批次大小（仅训练有效，非列表参数）
+valid_batch: 64
+# Z轴范围（光学相关参数，非列表参数）
+z_range: 1
+
+# 需要预测的Zernike系数序号（列表类型，共24个，与num_zernike=24匹配）
+zernike:
+  - 3
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27

@@ -1,0 +1,11 @@
+*.tif
+*.out
+*.pt
+__pycache__/
+*.tar
+*.pth
+*.tiff
+*.csv
+*.png
+*.mat
+*.docx
